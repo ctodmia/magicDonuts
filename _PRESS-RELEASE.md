@@ -30,7 +30,7 @@ Once the project moves into development, the press release can be used as a touc
 
 ## Solution ##
   > MD brings the community to you. With MD, Every user's online light goes on to show they're live.  MD links you to round-the clock support from other programmers around the globe.  Moving your IRC chat channel to MD means unanswered questions can get attention from millions of programmers in the GitHub community, and fast! 
-  > And don't worry if you're new at all this.  If you're new to programming, we'll throw out the red carpet.  Once you've browsed what others are up to, we'll link you up to establishing your own account so you can start collaborating. 
+  > And don't worry if you're new to all this.  If you're new to the programming community, we throw out the red carpet.  Be our guest and browse what others are up to, then we'll link you up to establish your own GitHub account so you can start collaborating. 
 
 ## Quote from You ##
   > "The magnificent donuts have successfully brought IRC into the new age."
