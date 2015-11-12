@@ -1,0 +1,22 @@
+{
+  "name": "md",
+  "version": "1.0.0",
+  "description": "Bringing together the programming community, beginners welcome",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicDonuts/magicDonuts.git"
+  },
+  "author": "Aheri Stanford-Asiyo, Carine Todmia, Clifford Fajardo, Gabriel Matias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magicDonuts/magicDonuts/issues"
+  },
+  "homepage": "https://github.com/magicDonuts/magicDonuts#readme",
+  "dependencies": {
+    "angular": "^1.4.7"
+  }
+}
