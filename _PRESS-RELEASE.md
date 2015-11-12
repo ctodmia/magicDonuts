@@ -36,7 +36,7 @@ Once the project moves into development, the press release can be used as a touc
   > "The magnificent donuts have successfully brought IRC into the new age."
 
 ## How to Get Started ##
-  > It's easy to get started. Just visit us at MD.io.
+  > It's easy to get started. Just visit us at md.io.
 
 ## Customer Quote ##
   > "I never expected it to be so easy to connect directly with programmers all over the world." 
