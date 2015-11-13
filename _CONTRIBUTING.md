@@ -4,77 +4,44 @@
 
 1. Fork the repo
 1. Cut a namespaced feature branch from master
-  - bug/...
-  - feat/...
-  - test/...
-  - doc/...
-  - refactor/...
-1. Make commits to your feature branch. Prefix each commit like so:
-  - feat: Added a new feature
-  - fix: 
-  - refactor: ...
-  - style: Code cleanup, reindentation
-  - test: Added a new test
-  - (doc) ...
-1. When you've finished with your fix or feature, Rebase upstream changes into your branch. submit a [pull request][]
-   directly to master. Include a description of your changes.
-1. Your pull request will be reviewed by another maintainer. The point of code
-   reviews is to help keep the codebase clean and of high quality and, equally
-   as important, to help you grow as a programmer. If your code reviewer
-   requests you make a change you don't understand, ask them why.
-1. Fix any issues raised by your code reviwer, and push your fixes as a single
-   new commit.
-1. Once the pull request has been reviewed, it will be merged by another member of the team. Do not merge your own commits.
+1. Make commits to your feature branch. Please see below to review our short commit style guide.
+1. Rebase upstream changes into your branch. submit a [pull request][] directly to master. 
+1. Your pull request will be reviewed by another maintainer. This code review will help keep the codebase clean and high quality. If your code reviewer requests you make a change you don't understand, ask them about it. Do not merge your own commits.
+1. Fix any issues raised by the code reviwer, and push fixes as a single new commit.  It will be merged  to be merged after successful review by a member of the team. 
 
 ## Detailed Workflow
 
-### Fork the repo
+So you're ready to code. 
 
-Calling all Donuts! We've all forked our repo and added it as an upstream remote. 
-
-Great!
-
-When it's time to drop code, remember:
-
+###Fork the repo
+  
 ### Cut a namespaced feature branch from master
 
-Your branch should follow this naming convention:
-  - bug/...
-  - feat/...
-  - test/...
-  - doc/...
-  - refactor/...
+Name your branch based on the types below:
+Note: This naming is much less important than that of commit messages you write! Use it to get used to the modification types!
 
-
-These commands will help you do this:
+<ul>__TYPES__<<ul>
+  <li>feat     Choose this name if you plan to work on a new feature</li>
+  <li>fix      Choose this if the branch is intended to fix a bug</li>
+  <li>style    Choose for style, re-alignment or beautification updates to include formatting, whitespace, semi-colons, etc</li>
+  <li>docs     Changes to forward-facing docs like ReadMe.md or this one., <strong>not to dependencies, libraries or code</strong> </li>
+  <li>refactor (self-explanatory)
+  <li>test     For adding missing tests</li>
+  <li>chore    For adding dependencies or libraries, to include package.json changes</li>
 
 ``` bash
-
 # Creates your branch and brings you there
 git checkout -b `your-branch-name`
 ```
 
-### Make commits to your feature branch. 
-
-Make sure that you only make changes that are relevant to this branch. If you find yourself making unrelated changes, make a new branch for those changes.
-
+### Make commits to your new branch. 
 ## magicDonuts commit styleguide
 
-To enforce great organization, we adhere to a styleguide for all commits.  This may undergo some refinement during project development.*
+<i> Remember:If you find yourself making unrelated changes, simply cut a new branch for them from master (same as above).</i> 
 
-```
-<type>: <subject>
-```
+Each commit is composed of two parts: type and summary. *
 
-The commit subject should summarize the change in the past tense and be preceded by a <strong>type</strong> and colon <strong>:</strong>.
-
-<code>docs: Created README file</code>
-
-An optional <strong>body</strong> will follow, to describe what the change improves or updates. Any grammatical format.
-
-<code>style: update indentations
-improves readability</code>
-
+TYPE, defined above, is the category of modification.  Choose from this list: 
 <ul>TYPES<ul>
   <li>feat:     A new feature</li>
   <li>fix:      A bug fix</li>
@@ -83,52 +50,26 @@ improves readability</code>
   <li>refactor: A code change that neither fixes a bug nor adds a feature</li>
   <li>test:     Adding missing tests</li>
   <li>chore:    Updates or changes to dependencies or libraries, may include generation of node packages or package.json changes</li>
-  <li>timeout:  A commit dedicated only to saving work from deletion. Avoid when possible.
 
-Changes should refer directly to an Issue # when possible. 
+Please dhere to our commit styleguide for all commits. 
+
+The commit summary states the change in the past tense.
+
+Examples:
+<code>docs: Created README file</code>
+
+Optional: Describe what the change improves or updates. 
+  *For this option, you must add your description below the type and summary, after one line of vertical whitespace (hit enter twice). 
+
+<code>style: Updated indentations and increased whitespace
+<br>
+Improves code readability</code>
 
 *This guide is loosely based on the commit styleguide published for angular.js, which can be found at: <a href="Commits a la Angular.js" https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit>
 
 ### Rebase upstream changes into your branch
 
-Once you are done making changes, you can begin the process of getting
-your code merged into the main repo. Step 1 is to rebase upstream
-changes to the master branch into yours by running this command
-from your branch:
-
-```bash
-git pull --rebase upstream master
-```
-
-This will start the rebase process. You must commit all of your changes
-before doing this. If there are no conflicts, this should just roll all
-of your changes back on top of the changes from upstream, leading to a
-nice, clean, linear commit history.
-
-If there are conflicting changes, git will start yelling at you part way
-through the rebasing process. Git will pause rebasing to allow you to sort
-out the conflicts. You do this the same way you solve merge conflicts,
-by checking all of the files git says have been changed in both histories
-and picking the versions you want. Be aware that these changes will show
-up in your pull request, so try and incorporate upstream changes as much
-as possible.
-
-You pick a file by `git add`ing it - you do not make commits during a
-rebase.
-
-Once you are done fixing conflicts for a specific commit, run:
-
-```bash
-git rebase --continue
-```
-
-This will continue the rebasing process. Once you are done fixing all
-conflicts you should run the existing tests to make sure you didn’t break
-anything, then run your new tests (there are new tests, right?) and
-make sure they work also.
-
-If rebasing broke anything, fix it, then repeat the above process until
-you get here again and nothing is broken and all the tests pass.
+<code> you$     git pull --rebase upstream master </code>
 
 ### Make a pull request
 
