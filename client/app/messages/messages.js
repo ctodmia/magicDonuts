@@ -1,7 +1,6 @@
-var myApp = angular.module("myApp", ["firebase"]);
+angular.module("myApp.messages", [])
 
-
-myApp.controller("MessagesController", ["$scope", "$firebaseArray",
+.controller("MessagesController", ["$scope", "$firebaseArray",
   function($scope, $firebaseArray) {
     var ref = new Firebase("https://gitlytest.firebaseio.com/messages");
     $scope.messages = $firebaseArray(ref);
