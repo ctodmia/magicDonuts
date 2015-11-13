@@ -18,11 +18,11 @@ angular.module("myApp", [
 		})
 		.state("home", {
 			controller: "MessagesController",
-			url: "/",
+			url: "/messages",
 			templateUrl: "app/messages/messages.html"
 		});
 
-	$urlRouterProvider.otherwise("/");
+	$urlRouterProvider.otherwise("/login");
 });
 
 //route manager (.config) also goes here
