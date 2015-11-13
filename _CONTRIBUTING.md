@@ -42,16 +42,16 @@ git checkout -b `your-branch-name`
 Each commit is composed of two parts: type and summary. *
 
 TYPE, defined above, is the category of modification.  Choose from this list: 
-<ul>TYPES<ul>
-  <li>feat:     A new feature</li>
-  <li>fix:      A bug fix</li>
-  <li>style:    Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)</li>
-  <li>docs:     Changes to background documentation (but not to dependencies or libraries, or code). </li>
-  <li>refactor: A code change that neither fixes a bug nor adds a feature</li>
-  <li>test:     Adding missing tests</li>
-  <li>chore:    Updates or changes to dependencies or libraries, may include generation of node packages or package.json changes</li>
+__TYPES__
+  feat:     A new feature
+  fix:      A bug fix
+  style:    Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+  docs:     Changes to background documentation (but not to dependencies or libraries, or code). 
+  refactor: A code change that neither fixes a bug nor adds a feature
+  test:     Adding missing tests
+  chore:    Updates or changes to dependencies or libraries, may include generation of node packages or package.json changes
 
-Please dhere to our commit styleguide for all commits. 
+Please adhere to our commit styleguide for all commits. 
 
 The commit summary states the change in the past tense.
 
@@ -61,9 +61,8 @@ Examples:
 Optional: Describe what the change improves or updates. 
   *For this option, you must add your description below the type and summary, after one line of vertical whitespace (hit enter twice). 
 
-<code>style: Updated indentations and increased whitespace
-<br>
-Improves code readability</code>
+<code>style: Updated indentations and increased whitespace</code>
+<code>Improves code readability</code>
 
 *This guide is loosely based on the commit styleguide published for angular.js, which can be found at: <a href="Commits a la Angular.js" https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit>
 
