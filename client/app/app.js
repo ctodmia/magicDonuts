@@ -2,18 +2,27 @@
 angular.module("myApp", [
 	"firebase",
 	"ui.router",
-	"myApp.messages"
+	"myApp.services",
+	"myApp.messages",
+	"myApp.auth"
 ])
 
 .config(function($stateProvider, $urlRouterProvider){
 
-	$urlRouterProvider.otherwise('/');
 
-	$stateProvider.state("home", {
-		controller: 'MessagesController',
-		url: "/",
-		templateUrl: "app/messages/messages.html"
-	});
+	$stateProvider
+		.state("login", {
+			controller: "AuthController",
+			url: "/login",
+			templateUrl: "app/auth/loginAuth.html"
+		})
+		.state("home", {
+			controller: "MessagesController",
+			url: "/",
+			templateUrl: "app/messages/messages.html"
+		});
+
+	$urlRouterProvider.otherwise("/");
 });
 
 //route manager (.config) also goes here
