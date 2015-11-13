@@ -10,8 +10,9 @@ angular.module("myApp", [
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider.state("home", {
+		controller: 'MessagesController',
 		url: "/",
-		template: "<h1>Hello</h1>"
+		templateUrl: "app/messages/messages.html"
 	});
 });
 
