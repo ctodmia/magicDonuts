@@ -1,49 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-  <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-  <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
-  <style>html {background: slategrey;}</style>
-</head>
-<body>
-<h2>OAuth Test!</h2>
-  <div ng-app="sampleApp" ng-controller="SampleCtrl">
-    <div ng-show="authData">
-      <p>Hello, {{ authData.github.displayName }}</p>
-      <button ng-click="auth.$unauth()">Logout</button>
-    </div>
-    <div ng-hide="authData">
-      <p>Welcome, please log in.</p>
-      <button ng-click="auth.$authWithOAuthPopup('github')">Login With Github</button>
-    </div>
+<div>
+  <div ng-show="authData">
+    <p>Hello, {{ authData.github.displayName }}</p>
+    <button ng-click="auth.$unauth()">Logout</button>
   </div>
+  <div ng-hide="authData">
+    <p>Welcome, please log in.</p>
+    <button ng-click="auth.$authWithOAuthPopup('github')">Login With Github</button>
+  </div>
+</div>
 
-</body>
-<script>
-var app = angular.module("sampleApp", ["firebase"]);
-
-app.factory("Auth", ["$firebaseAuth",
-  function($firebaseAuth) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com", "example3");
-    return $firebaseAuth(ref);
-  }
-]);
-
-app.controller("SampleCtrl", ["$scope", "Auth",
-  function($scope, Auth) {
-    $scope.auth = Auth;
-    // any time auth status updates, add the user data to scope
-    $scope.auth.$onAuth(function(authData) {
-      $scope.authData = authData;
-    });
-  }
-]);
-
-</script>
-
-</html>
 
 
