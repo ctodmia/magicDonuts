@@ -27,11 +27,13 @@ angular.module("myApp", [
 			url:"/home",
 			views: {
 				"": { templateUrl: "app/home/home.html" },
+				//html and controller required for onlineUsers view
 				"onlineUsers@home": { template: "online users column!!"},
+				//html and controller required for chatrooms view
 				"chatrooms@home": { template: "chatrooms go here" },
+				//html and controller required for userSearch view
 				"userSearch@home": { template: "user search section lives here" }
 			}
-			// templateUrl:
 		});
 
 	$urlRouterProvider.otherwise("/login");
