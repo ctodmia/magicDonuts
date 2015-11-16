@@ -23,18 +23,20 @@ angular.module("myApp", [
 		})
 		//need this for later, in order to have multiple views in one window
 		// https://scotch.io/tutorials/angular-routing-using-ui-router
-		.state("home", {
-			url:"/home",
+		.state("chatroom", {
+			url:"/chat",
 			views: {
 				"": { templateUrl: "app/home/home.html" },
 				//html and controller required for onlineUsers view
 				"onlineUsers@home": { template: "online users column!!"},
 				//html and controller required for chatrooms view
-				"chatrooms@home": { template: "chatrooms go here" },
+				"chatrooms@home": { templateUrl: "app/messages/messages.html" },
 				//html and controller required for userSearch view
 				"userSearch@home": { template: "user search section lives here" }
 			}
 		});
+
+
 
 	$urlRouterProvider.otherwise("/login");
 });
