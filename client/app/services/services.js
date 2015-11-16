@@ -6,8 +6,8 @@ angular.module("myApp.services", [])
     //the following code redirects users to our homepage at login success.
     ref.authWithOAuthPopup('github', function () {
       console.log('User is currently being logged in.');
-      $location.path('/messages')
-    })
+      $location.path('/home');
+    });
     return $firebaseAuth(ref);
   });
 	

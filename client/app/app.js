@@ -16,11 +16,12 @@ angular.module("myApp", [
 			url: "/login",
 			templateUrl: "app/auth/loginAuth.html"
 		})
-		.state("messages", {
-			controller: "MessagesController",
-			url: "/messages",
-			templateUrl: "app/messages/messages.html"
-		})
+		//messages
+		// .state("messages", {
+		// 	controller: "MessagesController",
+		// 	url: "/messages",
+		// 	templateUrl: "app/messages/messages.html"
+		// })
 		//need this for later, in order to have multiple views in one window
 		// https://scotch.io/tutorials/angular-routing-using-ui-router
 		.state("home", {
@@ -30,7 +31,11 @@ angular.module("myApp", [
 				//html and controller required for onlineUsers view
 				"onlineUsers@home": { template: "online users column!!"},
 				//html and controller required for chatrooms view
-				"chatrooms@home": { template: "chatrooms go here" },
+				"chatrooms@home": {
+					controller: "MessagesController",
+					url: "/messages",
+					templateUrl: "app/messages/messages.html"
+				},
 				//html and controller required for userSearch view
 				"userSearch@home": { template: "user search section lives here" }
 			}
