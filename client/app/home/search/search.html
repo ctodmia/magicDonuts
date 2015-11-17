@@ -1,0 +1,37 @@
+<h1>Hey Carine wants to be seen</h1>
+ 
+    <div class="profile-card">
+      <h2>{{userDetails.login}}</h2>
+      <img id="github-avatar"ng-src="{{userDetails.avatar_url}}">
+      <ul>
+        <li ng-click="fetchReposCtrl()">Repos:<span>{{userDetails.public_repos}}</span></li>
+        <li ng-click="fetchFollowingCtrl()">Following:<span>{{userDetails.following}}</span></li>
+        <li ng-click="fetchFollowersCtrl()">Followers:<span>{{userDetails.followers}}</span></li>
+      </ul>
+      <input type="text" placeholder="Enter a Github user"
+       ng-model="search" ng-change="change()" ng-model-options='{debounce: 500}'>
+
+    </div>
+    
+    <div class="info-container">
+      <!-- conditional show and hide use nh-hide or -->
+      <div class="repos">
+        <li ng-repeat="repo in userRepos">{{repo.name}}</li>
+      </div>
+      
+      <div class='following'>
+        <li ng-repeat="repo in userFollowing">{{repo.login}}
+          <img ng-src="{{repo.avatar_url}}" >
+        </li>
+        
+      </div>
+
+      <div class="followers">
+        <li ng-repeat="repo in userFollowers">{{repo.login}}
+          <img ng-src="{{repo.avatar_url}}" >
+        </li>
+
+      </div>    
+
+    </div>
+  </div> 
