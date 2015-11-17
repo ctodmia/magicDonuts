@@ -37,18 +37,132 @@ angular.module("myApp", [
 			}
 		})
 
-		.state("chat", {
-			url:"/chat",
+		.state("jqueryChatroom", {
+			url:"/jqueryChatroom",
 			views: {
-				"": { templateUrl: "app/chat/chat.html" },
+				"": { templateUrl: "app/chatrooms/jqueryChatroom.html" },
 				// html and controller required for onlineUsers view
-				"onlineUsers@chat": { template: "online users column!!"},
+				"onlineUsers@jqueryChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
-				"codeShare@chat": { 
-					templateUrl: "app/chat/codeshare.html"
+				"codeShare@jqueryChatroom": { 
+					templateUrl: "app/jqueryChatroom/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
-				"messages@chat": { 
+				"messages@jqueryChatroom": { 
+					template: "Yo yo Yo whats up"
+					// templateUrl: "app/messages/messages.html",
+					// controller: "MessagesController"  
+				}
+			}
+		})
+
+		.state("nodeChatroom", {
+			url:"/nodeChatroom",
+			views: {
+				"": { templateUrl: "app/chatrooms/nodeChatroom.html" },
+				// html and controller required for onlineUsers view
+				"onlineUsers@nodeChatroom": { template: "online users column!!"},
+		// 		//html and controller required for chatrooms view
+				"codeShare@nodeChatroom": { 
+					templateUrl: "app/nodeChatroom/codeshare.html"
+				},
+		// 		//html and controller required for userSearch view
+				"messages@nodeChatroom": { 
+					template: "Yo yo Yo whats up"
+					// templateUrl: "app/messages/messages.html",
+					// controller: "MessagesController"  
+				}
+			}
+		})
+
+		.state("angularChatroom", {
+			url:"/angularChatroom",
+			views: {
+				"": { templateUrl: "app/chatrooms/angularChatroom.html" },
+				// html and controller required for onlineUsers view
+				"onlineUsers@angularChatroom": { template: "online users column!!"},
+		// 		//html and controller required for chatrooms view
+				"codeShare@angularChatroom": { 
+					templateUrl: "app/angularChatroom/codeshare.html"
+				},
+		// 		//html and controller required for userSearch view
+				"messages@angularChatroom": { 
+					template: "Yo yo Yo whats up"
+					// templateUrl: "app/messages/messages.html",
+					// controller: "MessagesController"  
+				}
+			}
+		})
+
+		.state("pythonChatroom", {
+			url:"/pythonChatroom",
+			views: {
+				"": { templateUrl: "app/chatrooms/pythonChatroom.html" },
+				// html and controller required for onlineUsers view
+				"onlineUsers@pythonChatroom": { template: "online users column!!"},
+		// 		//html and controller required for chatrooms view
+				"codeShare@pythonChatroom": { 
+					templateUrl: "app/pythonChatroom/codeshare.html"
+				},
+		// 		//html and controller required for userSearch view
+				"messages@pythonChatroom": { 
+					template: "Yo yo Yo whats up"
+					// templateUrl: "app/messages/messages.html",
+					// controller: "MessagesController"  
+				}
+			}
+		})
+
+		.state("mongodbChatroom", {
+			url:"/mongodbChatroom",
+			views: {
+				"": { templateUrl: "app/chatrooms/mongodbChatroom.html" },
+				// html and controller required for onlineUsers view
+				"onlineUsers@mongodbChatroom": { template: "online users column!!"},
+		// 		//html and controller required for chatrooms view
+				"codeShare@mongodbChatroom": { 
+					templateUrl: "app/mongodbChatroom/codeshare.html"
+				},
+		// 		//html and controller required for userSearch view
+				"messages@mongodbChatroom": { 
+					template: "Yo yo Yo whats up"
+					// templateUrl: "app/messages/messages.html",
+					// controller: "MessagesController"  
+				}
+			}
+		})
+
+		.state("rubyOnRailsChatroom", {
+			url:"/rubyOnRailsChatroom",
+			views: {
+				"": { templateUrl: "app/chatrooms/rubyOnRailsChatroom.html" },
+				// html and controller required for onlineUsers view
+				"onlineUsers@rubyOnRailsChatroom": { template: "online users column!!"},
+		// 		//html and controller required for chatrooms view
+				"codeShare@rubyOnRailsChatroom": { 
+					templateUrl: "app/rubyOnRailsChatroom/codeshare.html"
+				},
+		// 		//html and controller required for userSearch view
+				"messages@rubyOnRailsChatroom": { 
+					template: "Yo yo Yo whats up"
+					// templateUrl: "app/messages/messages.html",
+					// controller: "MessagesController"  
+				}
+			}
+		})
+
+		.state("GruntChatroom", {
+			url:"/GruntChatroom",
+			views: {
+				"": { templateUrl: "app/chatrooms/GruntChatroom.html" },
+				// html and controller required for onlineUsers view
+				"onlineUsers@GruntChatroom": { template: "online users column!!"},
+		// 		//html and controller required for chatrooms view
+				"codeShare@GruntChatroom": { 
+					templateUrl: "app/GruntChatroom/codeshare.html"
+				},
+		// 		//html and controller required for userSearch view
+				"messages@GruntChatroom": { 
 					template: "Yo yo Yo whats up"
 					// templateUrl: "app/messages/messages.html",
 					// controller: "MessagesController"  
