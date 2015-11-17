@@ -40,12 +40,12 @@ angular.module("myApp", [
 		.state("jqueryChatroom", {
 			url:"/jqueryChatroom",
 			views: {
-				"": { templateUrl: "app/chatrooms/jqueryChatroom.html" },
+				"": { templateUrl: "app/chatrooms/jquery/chatroom.html" },
 				// html and controller required for onlineUsers view
 				"onlineUsers@jqueryChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@jqueryChatroom": { 
-					templateUrl: "app/jqueryChatroom/codeshare.html"
+					templateUrl: "app/jqueryChatroom/jquery/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
 				"messages@jqueryChatroom": { 
