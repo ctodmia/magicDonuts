@@ -2,7 +2,7 @@ angular.module("myApp.messages", [])
 
 .controller("MessagesController", ["$scope", "$firebaseArray",
   function($scope, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/messages");
+    var ref = new Firebase("https://gitlytest.firebaseio.com/jquery");
     $scope.messages = $firebaseArray(ref);
 
     //ADD MESSAGE METHOD
