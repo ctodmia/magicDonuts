@@ -1,11 +1,16 @@
-<div>
-  <div>
-    <div ui-view="onlineUsers"></div>
-  </div>
-  <div>
-    <div ui-view="chatrooms"></div>
-  </div>
-  <div>
-    <div ui-view="userSearch"></div>
-  </div>
+<div id="home-container">
+	<div class="row">
+	  <div class="col-md-2">
+	  	These Are Online Users
+	    <div ui-view="onlineUsers"></div>
+	  </div>
+	  <div class="col-md-7">
+	  These Are Chat Rooms
+	    <div ui-view="chatrooms"></div>
+	  </div>
+	  <div class="col-md-3">
+	  These are searched users
+	    <div ui-view="userSearch"></div>
+	  </div>
+	</div>
 </div>
