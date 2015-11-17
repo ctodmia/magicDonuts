@@ -30,11 +30,28 @@ angular.module("myApp", [
 				//html and controller required for onlineUsers view
 				"onlineUsers@home": { template: "online users column!!"},
 				//html and controller required for chatrooms view
-				"chatrooms@home": { templateUrl: "app/messages/messages.html" },
+				"chatrooms@home": { templateUrl: "app/home/chatrooms.html" },
 				//html and controller required for userSearch view
 				"userSearch@home": { template: "user search section lives here" }
 			}
 		});
+
+		// .state("chat", {
+		// 	url:"/chat",
+		// 	views: {
+		// 		"": { templateUrl: "app/chat/chat.html" },
+		// 		//html and controller required for onlineUsers view
+		// 		"onlineUsers@chat": { template: "online users column!!"},
+		// 		//html and controller required for chatrooms view
+		// 		"codeshare@chat": { 
+		// 			templateUrl: "app/messages/messages.html",
+		// 			controller: "MessagesController" },
+		// 		//html and controller required for userSearch view
+		// 		"messages@chat": { 
+		// 			templateUrl: "app/messages/messages.html",
+		// 			controller: "MessagesController"  }
+		// 	}
+		// });
 
 	$urlRouterProvider.otherwise("/login");
 });

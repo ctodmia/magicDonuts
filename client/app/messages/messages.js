@@ -1,9 +1,10 @@
 angular.module("myApp.messages", [])
 
-.controller("MessagesController", ["$scope", "$firebaseArray",
-  function($scope, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/jquery");
+.controller("MessagesController", ["$scope", "$state", "Auth", "$firebaseArray",
+  function($scope, $state, Auth, $firebaseArray) {
+    var ref = new Firebase("https://gitlytest.firebaseio.com/messages");
     $scope.messages = $firebaseArray(ref);
+    $scope.auth = Auth;
 
     //ADD MESSAGE METHOD
     $scope.addMessage = function(e) {
@@ -16,5 +17,13 @@ angular.module("myApp.messages", [])
         $scope.msg = "";
       }
     };
+
+    $scope.logOut = function() {
+      // Auth.$unauth();
+      Auth.$unauth()
+      $state.go('login');
+      console.log('this works');
+    };
+
   }
 ]);
