@@ -18,12 +18,11 @@ angular.module("myApp.messages", [])
       }
     };
 
-    $scope.logOut = function() {
-      // Auth.$unauth();
-      Auth.$unauth()
-      $state.go('login');
-      console.log('this works');
-    };
+    // $scope.logOut = function() {
+    //   // Auth.$unauth();
+    //   Auth.$unauth()
+    //   $state.go('login');
+    //   console.log('this works');
+    // };
 
-  }
-]);
+  }]);

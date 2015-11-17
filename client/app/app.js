@@ -4,7 +4,8 @@ angular.module("myApp", [
 	"ui.router",
 	"myApp.services",
 	"myApp.messages",
-	"myApp.auth"
+	"myApp.auth",
+	"myApp.logout"
 ])
 
 .config(function($stateProvider, $urlRouterProvider){
@@ -27,6 +28,10 @@ angular.module("myApp", [
 			url:"/home",
 			views: {
 				"": { templateUrl: "app/home/home.html" },
+				"logOut@home": {
+					templateUrl: "app/logout/logout.html",
+					controller: "LogOutController"
+				},
 				//html and controller required for onlineUsers view
 				"onlineUsers@home": { template: "online users column!!"},
 				//html and controller required for chatrooms view

@@ -8,7 +8,7 @@ angular.module("myApp.services", [])
  
     ref.authWithOAuthPopup('github', function () {
       console.log('User is currently being logged in.');
-      $location.path('/messages')
+      $location.path('/home')
     })
     return $firebaseAuth(ref);
   });
