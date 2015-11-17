@@ -45,13 +45,11 @@ angular.module("myApp", [
 				"onlineUsers@jqueryChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@jqueryChatroom": { 
-					templateUrl: "app/jqueryChatroom/jquery/codeshare.html"
+					templateUrl: "app/chatrooms/jquery/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
-				"messages@jqueryChatroom": { 
-					template: "Yo yo Yo whats up"
-					// templateUrl: "app/messages/messages.html",
-					// controller: "MessagesController"  
+				"messages@jqueryChatroom": { templateUrl: "app/messages/messages.html",
+					controller: "MessagesController"
 				}
 			}
 		})
@@ -59,12 +57,12 @@ angular.module("myApp", [
 		.state("nodeChatroom", {
 			url:"/nodeChatroom",
 			views: {
-				"": { templateUrl: "app/chatrooms/nodeChatroom.html" },
+				"": { templateUrl: "app/chatrooms/nodejs/chatroom.html" },
 				// html and controller required for onlineUsers view
 				"onlineUsers@nodeChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@nodeChatroom": { 
-					templateUrl: "app/nodeChatroom/codeshare.html"
+					templateUrl: "app/chatrooms/node/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
 				"messages@nodeChatroom": { 
@@ -78,7 +76,7 @@ angular.module("myApp", [
 		.state("angularChatroom", {
 			url:"/angularChatroom",
 			views: {
-				"": { templateUrl: "app/chatrooms/angularChatroom.html" },
+				"": { templateUrl: "app/chatrooms/angularjs/chatroom.html" },
 				// html and controller required for onlineUsers view
 				"onlineUsers@angularChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
@@ -97,7 +95,7 @@ angular.module("myApp", [
 		.state("pythonChatroom", {
 			url:"/pythonChatroom",
 			views: {
-				"": { templateUrl: "app/chatrooms/pythonChatroom.html" },
+				"": { templateUrl: "app/chatrooms/python/chatroom.html" },
 				// html and controller required for onlineUsers view
 				"onlineUsers@pythonChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
@@ -116,7 +114,7 @@ angular.module("myApp", [
 		.state("mongodbChatroom", {
 			url:"/mongodbChatroom",
 			views: {
-				"": { templateUrl: "app/chatrooms/mongodbChatroom.html" },
+				"": { templateUrl: "app/chatrooms/mongodb/chatroom.html" },
 				// html and controller required for onlineUsers view
 				"onlineUsers@mongodbChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
@@ -135,7 +133,7 @@ angular.module("myApp", [
 		.state("rubyOnRailsChatroom", {
 			url:"/rubyOnRailsChatroom",
 			views: {
-				"": { templateUrl: "app/chatrooms/rubyOnRailsChatroom.html" },
+				"": { templateUrl: "app/chatrooms/rubyOnRails/chatroom.html" },
 				// html and controller required for onlineUsers view
 				"onlineUsers@rubyOnRailsChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
@@ -154,7 +152,7 @@ angular.module("myApp", [
 		.state("GruntChatroom", {
 			url:"/GruntChatroom",
 			views: {
-				"": { templateUrl: "app/chatrooms/GruntChatroom.html" },
+				"": { templateUrl: "app/chatrooms/grunt/chatroom.html" },
 				// html and controller required for onlineUsers view
 				"onlineUsers@GruntChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
