@@ -3,7 +3,13 @@ angular.module("myApp", [
 	"firebase",
 	"ui.router",
 	"myApp.services",
-	"myApp.messages",
+	"myApp.jqueryMessenger",
+	"myApp.angularMessenger",
+	"myApp.gruntMessenger",
+	"myApp.mongoMessenger",
+	"myApp.nodeMessenger",
+	"myApp.pythonMessenger",
+	"myApp.rubyMessenger",
 	"myApp.auth"
 ])
 
@@ -48,8 +54,9 @@ angular.module("myApp", [
 					templateUrl: "app/chatrooms/jquery/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
-				"messages@jqueryChatroom": { templateUrl: "app/messages/messages.html",
-					controller: "MessagesController"
+				"messages@jqueryChatroom": { 
+					templateUrl: "app/chatrooms/jquery/messenger/messenger.html",
+					controller: "JqueryMsgController"
 				}
 			}
 		})
@@ -62,13 +69,12 @@ angular.module("myApp", [
 				"onlineUsers@nodeChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@nodeChatroom": { 
-					templateUrl: "app/chatrooms/node/codeshare.html"
+					templateUrl: "app/chatrooms/nodejs/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
 				"messages@nodeChatroom": { 
-					template: "Yo yo Yo whats up"
-					// templateUrl: "app/messages/messages.html",
-					// controller: "MessagesController"  
+					templateUrl: "app/chatrooms/nodejs/messenger/messenger.html",
+					controller: "NodeMsgController"  
 				}
 			}
 		})
@@ -81,13 +87,12 @@ angular.module("myApp", [
 				"onlineUsers@angularChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@angularChatroom": { 
-					templateUrl: "app/angularChatroom/codeshare.html"
+					templateUrl: "app/chatrooms/angularjs/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
 				"messages@angularChatroom": { 
-					template: "Yo yo Yo whats up"
-					// templateUrl: "app/messages/messages.html",
-					// controller: "MessagesController"  
+					templateUrl: "app/chatrooms/angularjs/messenger/messenger.html",
+					controller: "AngularMsgController" 
 				}
 			}
 		})
@@ -100,13 +105,12 @@ angular.module("myApp", [
 				"onlineUsers@pythonChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@pythonChatroom": { 
-					templateUrl: "app/pythonChatroom/codeshare.html"
+					templateUrl: "app/chatrooms/python/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
 				"messages@pythonChatroom": { 
-					template: "Yo yo Yo whats up"
-					// templateUrl: "app/messages/messages.html",
-					// controller: "MessagesController"  
+					templateUrl: "app/chatrooms/python/messenger/messenger.html",
+					controller: "PythonMsgController"  
 				}
 			}
 		})
@@ -119,13 +123,12 @@ angular.module("myApp", [
 				"onlineUsers@mongodbChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@mongodbChatroom": { 
-					templateUrl: "app/mongodbChatroom/codeshare.html"
+					templateUrl: "app/chatrooms/mongodb/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
 				"messages@mongodbChatroom": { 
-					template: "Yo yo Yo whats up"
-					// templateUrl: "app/messages/messages.html",
-					// controller: "MessagesController"  
+					templateUrl: "app/chatrooms/mongodb/messenger/messenger.html",
+					controller: "MongoMsgController" 
 				}
 			}
 		})
@@ -138,13 +141,12 @@ angular.module("myApp", [
 				"onlineUsers@rubyOnRailsChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@rubyOnRailsChatroom": { 
-					templateUrl: "app/rubyOnRailsChatroom/codeshare.html"
+					templateUrl: "app/chatrooms/rubyOnRails/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
 				"messages@rubyOnRailsChatroom": { 
-					template: "Yo yo Yo whats up"
-					// templateUrl: "app/messages/messages.html",
-					// controller: "MessagesController"  
+					templateUrl: "app/chatrooms/rubyOnRails/messenger/messenger.html",
+					controller: "RubyMsgController" 
 				}
 			}
 		})
@@ -157,13 +159,12 @@ angular.module("myApp", [
 				"onlineUsers@GruntChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@GruntChatroom": { 
-					templateUrl: "app/GruntChatroom/codeshare.html"
+					templateUrl: "app/chatrooms/grunt/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
 				"messages@GruntChatroom": { 
-					template: "Yo yo Yo whats up"
-					// templateUrl: "app/messages/messages.html",
-					// controller: "MessagesController"  
+					templateUrl: "app/chatrooms/grunt/messenger/messenger.html",
+					controller: "GruntMsgController"  
 				}
 			}
 		});
