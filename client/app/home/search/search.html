@@ -1,6 +1,6 @@
     <div class="profile-card">
       <h2>{{userDetails.login}}</h2>
-      <img id="github-avatar"ng-src="{{userDetails.avatar_url}}">
+      <img id="github-avatar" ng-src="{{userDetails.avatar_url}}">
       <ul>
         <li ng-click="fetchReposCtrl()">Repos:<span>{{userDetails.public_repos}}</span></li>
         <li ng-click="fetchFollowingCtrl()">Following:<span>{{userDetails.following}}</span></li>
