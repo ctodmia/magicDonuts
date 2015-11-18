@@ -3,6 +3,7 @@ angular.module("myApp", [
 	"firebase",
 	"ui.router",
 	"myApp.services",
+	"myApp.search",
 	"myApp.jqueryMessenger",
 	"myApp.angularMessenger",
 	"myApp.gruntMessenger",
@@ -34,12 +35,19 @@ angular.module("myApp", [
 			url:"/home",
 			views: {
 				"": { templateUrl: "app/home/home.html" },
+				"logOut@home": {
+					templateUrl: "app/logout/logout.html",
+					controller: "LogOutController"
+				},
 				//html and controller required for onlineUsers view
 				"onlineUsers@home": { template: "online users column!!"},
 				//html and controller required for chatrooms view
 				"roomList@home": { templateUrl: "app/home/roomlist.html" },
 				//html and controller required for userSearch view
-				"userSearch@home": { template: "user search section lives here" }
+				"userSearch@home": { 
+					templateUrl: "app/home/search/search.html",
+					controller: "SearchController"
+				 }
 			}
 		})
 
