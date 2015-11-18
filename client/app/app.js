@@ -42,7 +42,7 @@ angular.module("myApp", [
 				// 	controller: "LogOutController"
 				// },
 				//html and controller required for onlineUsers view
-				"onlineUsers@home": { template: "online users column!!"},
+				"onlineUsers@home": { template: "Welcome!"},
 				//html and controller required for chatrooms view
 				"roomList@home": { templateUrl: "app/home/roomlist.html" },
 				//html and controller required for userSearch view

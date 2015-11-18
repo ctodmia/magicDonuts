@@ -1,9 +1,5 @@
-<button ng-click="logOut()">
- Logout
-</button>
-
+<h3>Git Chat</h3>
 <div class="example-chat l-demo-container">
-  <header>Gitly Chat</header>
   <div class="example-chat-toolbar">
     <label for="nameInput">Username:</label>
     <input ng-model="name" type="text" id="nameInput" placeholder="enter a username...">
@@ -11,7 +7,7 @@
 
   <ul id="example-messages" class="example-chat-messages">
     <li ng-repeat="msg in messages">
-      <strong class="example-chat-username">{{ msg.user }}</strong>
+      <strong class="example-chat-username">{{ msg.user}} : </strong>
       {{ msg.userMessage }}
     </li>
   </ul>
@@ -22,14 +18,3 @@
     </form>
   </footer>
 </div>
-
-
-
-
-
-<h1 class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</h1>
-<h2 class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</h2>
-<h3 class="text-warning">Etiam porta sem malesuada magna mollis euismod.</h3>
-<h4 class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</h4>
-<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-<span class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</span>
