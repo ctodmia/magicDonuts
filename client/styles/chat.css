@@ -1,15 +1,43 @@
 #home-container {
-	margin: 0px 50px 0px 50px;
+  margin: 0px 50px 0px 50px;
 }
 
-.col-md-7{
-	border:solid;
+.splash {
+  background-image: url(../images/main-bg.jpeg);
+  background-color: #272b30;
+}
+
+body {
+  background-color: #272b30;
+}
+
+.centered {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#centeredButton {
+  text-align: center;
+  vertical-align: middle;
+/*  position: absolute;
+  margin: 0;
+  top: 50%;                         
+  transform: translate(0, -50%);*/
+}
+
+/*.cs-header {
+    display: none !important;/*Use this command safely :).
+}
+*/
+
+/*.col-md-7{
+  border:solid;
 }
 
 .col-md-3{
-	border:solid;
+  border:solid;
 }
 
 .col-md-2{
-	border:solid;
-}
+  border:solid;
+}*/
