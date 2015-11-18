@@ -1,12 +1,30 @@
-# Project Name
+# GACC
 
-> Pithy project description
+> Gathering the programming community
+
+GACC is __Gathering All Crafty Coders__
+
+$ git Gather
+
+    Join a Gathering based on your interests. Meet others with similar interests and skills. 
+
+$ git Connect
+  
+    Chat live with other users. Collaborate with other crafty coders. git Connected. 
+
+$ git Crafty
+
+    Share your code live via an embedded codeshare window. You'll remain conneted with your chat session. 
 
 ## Team
 
   - __Product Owner__: Carine Todmia
   - __Scrum Master__: Aheri Stanford-Asiyo
   - __Development Team Members__: Gabriel Matias, Clifford Fajardo
+
+## Product Description
+
+
 
 ## Table of Contents
 
@@ -20,15 +38,11 @@
 
 ## Usage
 
-> Some usage instructions
+> Deploy with Firebase.
 
 ## Requirements
 
 - Node 0.10.x
-- Redis 2.6.x
-- Postgresql 9.1.x
-- etc
-- etc
 
 ## Development
 
