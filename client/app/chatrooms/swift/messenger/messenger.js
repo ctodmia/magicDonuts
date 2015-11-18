@@ -1,8 +1,8 @@
-angular.module("myApp.mongoMessenger", [])
+angular.module("myApp.swiftMessenger", [])
 
-.controller("MongoMsgController", ["$scope", "$state", "Auth", "$firebaseArray",
+.controller("SwiftMsgController", ["$scope", "$state", "Auth", "$firebaseArray",
   function($scope, $state, Auth, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/mongo");
+    var ref = new Firebase("https://gitlytest.firebaseio.com/swift");
     $scope.messages = $firebaseArray(ref);
     $scope.auth = Auth;
 

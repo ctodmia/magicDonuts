@@ -8,8 +8,8 @@ angular.module("myApp", [
 	// "myApp.logout",
 	"myApp.jqueryMessenger",
 	"myApp.angularMessenger",
-	"myApp.gruntMessenger",
-	"myApp.mongoMessenger",
+	"myApp.html5Messenger",
+	"myApp.swiftMessenger",
 	"myApp.nodeMessenger",
 	"myApp.pythonMessenger",
 	"myApp.rubyMessenger",
@@ -125,20 +125,20 @@ angular.module("myApp", [
 			}
 		})
 
-		.state("mongodbChatroom", {
-			url:"/mongodbChatroom",
+		.state("swiftChatroom", {
+			url:"/swiftChatroom",
 			views: {
-				"": { templateUrl: "app/chatrooms/mongodb/chatroom.html" },
+				"": { templateUrl: "app/chatrooms/swift/chatroom.html" },
 				// html and controller required for onlineUsers view
-				"onlineUsers@mongodbChatroom": { template: "online users column!!"},
+				"onlineUsers@swiftChatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
-				"codeShare@mongodbChatroom": { 
-					templateUrl: "app/chatrooms/mongodb/codeshare.html"
+				"codeShare@swiftChatroom": { 
+					templateUrl: "app/chatrooms/swift/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
-				"messages@mongodbChatroom": { 
-					templateUrl: "app/chatrooms/mongodb/messenger/messenger.html",
-					controller: "MongoMsgController" 
+				"messages@swiftChatroom": { 
+					templateUrl: "app/chatrooms/swift/messenger/messenger.html",
+					controller: "SwiftMsgController" 
 				}
 			}
 		})
@@ -161,20 +161,20 @@ angular.module("myApp", [
 			}
 		})
 
-		.state("GruntChatroom", {
-			url:"/GruntChatroom",
+		.state("Html5Chatroom", {
+			url:"/HTML5Chatroom",
 			views: {
-				"": { templateUrl: "app/chatrooms/grunt/chatroom.html" },
+				"": { templateUrl: "app/chatrooms/HTML5/chatroom.html" },
 				// html and controller required for onlineUsers view
-				"onlineUsers@GruntChatroom": { template: "online users column!!"},
+				"onlineUsers@Html5Chatroom": { template: "online users column!!"},
 		// 		//html and controller required for chatrooms view
-				"codeShare@GruntChatroom": { 
-					templateUrl: "app/chatrooms/grunt/codeshare.html"
+				"codeShare@Html5Chatroom": { 
+					templateUrl: "app/chatrooms/HTML5/codeshare.html"
 				},
 		// 		//html and controller required for userSearch view
-				"messages@GruntChatroom": { 
-					templateUrl: "app/chatrooms/grunt/messenger/messenger.html",
-					controller: "GruntMsgController"  
+				"messages@Html5Chatroom": { 
+					templateUrl: "app/chatrooms/HTML5/messenger/messenger.html",
+					controller: "Html5MsgController"  
 				}
 			}
 		});
