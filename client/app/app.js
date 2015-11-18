@@ -3,6 +3,7 @@ angular.module("myApp", [
 	"firebase",
 	"ui.router",
 	"myApp.services",
+	"myApp.logout",
 	"myApp.search",
 	"myApp.jqueryMessenger",
 	"myApp.angularMessenger",
