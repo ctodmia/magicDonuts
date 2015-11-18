@@ -54,7 +54,7 @@ angular.module("myApp", [
 		})
 
 		.state("jqueryChatroom", {
-			url:"/jqueryChatroom",
+			url:"/jqueryGathering",
 			views: {
 				"": { templateUrl: "app/chatrooms/jquery/chatroom.html" },
 				// html and controller required for onlineUsers view
@@ -72,7 +72,7 @@ angular.module("myApp", [
 		})
 
 		.state("nodeChatroom", {
-			url:"/nodeChatroom",
+			url:"/nodeGathering",
 			views: {
 				"": { templateUrl: "app/chatrooms/nodejs/chatroom.html" },
 				// html and controller required for onlineUsers view
@@ -90,7 +90,7 @@ angular.module("myApp", [
 		})
 
 		.state("angularChatroom", {
-			url:"/angularChatroom",
+			url:"/angularGathering",
 			views: {
 				"": { templateUrl: "app/chatrooms/angularjs/chatroom.html" },
 				// html and controller required for onlineUsers view
@@ -108,7 +108,7 @@ angular.module("myApp", [
 		})
 
 		.state("pythonChatroom", {
-			url:"/pythonChatroom",
+			url:"/pythonGathering",
 			views: {
 				"": { templateUrl: "app/chatrooms/python/chatroom.html" },
 				// html and controller required for onlineUsers view
@@ -126,7 +126,7 @@ angular.module("myApp", [
 		})
 
 		.state("swiftChatroom", {
-			url:"/swiftChatroom",
+			url:"/swiftGathering",
 			views: {
 				"": { templateUrl: "app/chatrooms/swift/chatroom.html" },
 				// html and controller required for onlineUsers view
@@ -144,7 +144,7 @@ angular.module("myApp", [
 		})
 
 		.state("rubyOnRailsChatroom", {
-			url:"/rubyOnRailsChatroom",
+			url:"/rubyOnRailsGathering",
 			views: {
 				"": { templateUrl: "app/chatrooms/rubyOnRails/chatroom.html" },
 				// html and controller required for onlineUsers view
@@ -162,7 +162,7 @@ angular.module("myApp", [
 		})
 
 		.state("Html5Chatroom", {
-			url:"/HTML5Chatroom",
+			url:"/HTML5Gathering",
 			views: {
 				"": { templateUrl: "app/chatrooms/HTML5/chatroom.html" },
 				// html and controller required for onlineUsers view
