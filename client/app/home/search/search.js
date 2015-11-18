@@ -6,45 +6,45 @@ angular
       $http.get("https://api.github.com/users/" + $scope.search)
         .success(function(response) {
           $scope.userDetails = response;
-          console.log("$scope.userDetails", $scope.userDetails)
+          console.log("$scope.userDetails", $scope.userDetails);
         });
     }
 
     $scope.change = function(){
       console.log('change?');
-      setTimeout(fetchApi, 800)
-    }
+      setTimeout(fetchApi, 800);
+    };
 
 
     $scope.fetchReposCtrl = function(){
-      console.log("$scope.search", $scope.search)
+      console.log("$scope.search", $scope.search);
       $http.get("https://api.github.com/users/" + $scope.search + "/repos")
         .success(function(response) {
           $scope.userRepos = response;
-          console.log("$scope.userRepos",$scope.userRepos)
+          console.log("$scope.userRepos",$scope.userRepos);
         });
-    }
+    };
 
     $scope.fetchFollowersCtrl = function(){
-      console.log("$scope.search", $scope.search)
+      console.log("$scope.search", $scope.search);
       $http.get("https://api.github.com/users/" + $scope.search + "/followers")
         .success(function(response) {
           $scope.userFollowers = response;
-          console.log('$scope.userFollowers',$scope.userFollowers)
+          console.log('$scope.userFollowers',$scope.userFollowers);
         });
-    }
+    };
 
 
     $scope.fetchFollowingCtrl = function(){
-      console.log("$scope.search --->", $scope.search)
+      console.log("$scope.search --->", $scope.search);
       $http.get("https://api.github.com/users/" + $scope.search + "/following")
         .success(function(response) {
           $scope.userFollowing = response;
-          console.log('$scope.userFollowing', $scope.userFollowing)
+          console.log('$scope.userFollowing', $scope.userFollowing);
         });
-    }
-    console.log('$scope.userRepos', $scope.userRepos)
-})
+    };
+    console.log('$scope.userRepos', $scope.userRepos);
+});
 
 //iterate over repos
 // for(var key in repo){

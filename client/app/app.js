@@ -5,6 +5,7 @@ angular.module("myApp", [
 	"myApp.services",
 	"myApp.logout",
 	"myApp.search",
+	// "myApp.logout",
 	"myApp.jqueryMessenger",
 	"myApp.angularMessenger",
 	"myApp.gruntMessenger",
@@ -36,10 +37,10 @@ angular.module("myApp", [
 			url:"/home",
 			views: {
 				"": { templateUrl: "app/home/home.html" },
-				"logOut@home": {
-					templateUrl: "app/logout/logout.html",
-					controller: "LogOutController"
-				},
+				// "logOut@home": {
+				// 	templateUrl: "app/logout/logout.html",
+				// 	controller: "LogOutController"
+				// },
 				//html and controller required for onlineUsers view
 				"onlineUsers@home": { template: "online users column!!"},
 				//html and controller required for chatrooms view
