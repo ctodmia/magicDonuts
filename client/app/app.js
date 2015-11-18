@@ -5,7 +5,7 @@ angular.module("myApp", [
 	"myApp.services",
 	"myApp.logout",
 	"myApp.search",
-	// "myApp.logout",
+	"myApp.cssMessenger",
 	"myApp.jqueryMessenger",
 	"myApp.angularMessenger",
 	"myApp.html5Messenger",
@@ -175,6 +175,24 @@ angular.module("myApp", [
 				"messages@Html5Chatroom": { 
 					templateUrl: "app/chatrooms/HTML5/messenger/messenger.html",
 					controller: "Html5MsgController"  
+				}
+			}
+		})
+
+		.state("CssChatroom", {
+			url:"/CSSGathering",
+			views: {
+				"": { templateUrl: "app/chatrooms/CSS/chatroom.html" },
+				// html and controller required for onlineUsers view
+				"onlineUsers@CssChatroom": { template: "online users column!!"},
+		// 		//html and controller required for chatrooms view
+				"codeShare@CssChatroom": { 
+					templateUrl: "app/chatrooms/CSS/codeshare.html"
+				},
+		// 		//html and controller required for userSearch view
+				"messages@CssChatroom": { 
+					templateUrl: "app/chatrooms/CSS/messenger/messenger.html",
+					controller: "CssMsgController"  
 				}
 			}
 		});

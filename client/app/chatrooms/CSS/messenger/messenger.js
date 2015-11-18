@@ -1,8 +1,8 @@
-angular.module("myApp.angularMessenger", [])
+angular.module("myApp.cssMessenger", [])
 
-.controller("AngularMsgController", ["$scope", "$state", "Auth", "$firebaseArray",
+.controller("CssMsgController", ["$scope", "$state", "Auth", "$firebaseArray",
   function($scope, $state, Auth, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/angular");
+    var ref = new Firebase("https://gitlytest.firebaseio.com/CSS");
     $scope.messages = $firebaseArray(ref);
     $scope.auth = Auth;
 
@@ -18,6 +18,7 @@ angular.module("myApp.angularMessenger", [])
       }
     };
 
+
     $scope.logOut = function() {
       // Auth.$unauth();
       Auth.$unauth();
@@ -25,6 +26,4 @@ angular.module("myApp.angularMessenger", [])
       console.log('this works');
     };
 
-  }
-
-]);
+  }]);
