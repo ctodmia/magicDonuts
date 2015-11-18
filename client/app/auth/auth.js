@@ -4,9 +4,14 @@ angular.module("myApp.auth", [])
 //This controller adds firebase's OAuth-based sign-in functionality
 .controller("AuthController", function($scope, $state, $location, Auth) {
     $scope.auth = Auth;
+    $scope.usernames = [
+    
+    ]
     // any time auth status updates, add the user data to scope
     $scope.auth.$onAuth(function(authData) {
       $scope.authData = authData;
+      $scope.usernames.push({"name":authData.github.username});
+      console.log("this is my username", authData.github.username);
     });
 
     $scope.authorize = function(github) {

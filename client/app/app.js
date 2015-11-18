@@ -5,6 +5,7 @@ angular.module("myApp", [
 	"myApp.services",
 	"myApp.logout",
 	"myApp.search",
+	"myApp.onlineUsers",
 	"myApp.jqueryMessenger",
 	"myApp.angularMessenger",
 	"myApp.gruntMessenger",
@@ -41,7 +42,9 @@ angular.module("myApp", [
 					controller: "LogOutController"
 				},
 				//html and controller required for onlineUsers view
-				"onlineUsers@home": { template: "online users column!!"},
+				"onlineUsers@home": { 
+					templateUrl: "app/home/onlineusers.html",
+					controller: "OnlineUsers"},
 				//html and controller required for chatrooms view
 				"roomList@home": { templateUrl: "app/home/roomlist.html" },
 				//html and controller required for userSearch view
@@ -57,7 +60,9 @@ angular.module("myApp", [
 			views: {
 				"": { templateUrl: "app/chatrooms/jquery/chatroom.html" },
 				// html and controller required for onlineUsers view
-				"onlineUsers@jqueryChatroom": { template: "online users column!!"},
+				"onlineUsers@jqueryChatroom": { 
+					templateUrl: "app/home/onlineusers.html",
+					controller: "OnlineUsers"},
 		// 		//html and controller required for chatrooms view
 				"codeShare@jqueryChatroom": { 
 					templateUrl: "app/chatrooms/jquery/codeshare.html"
