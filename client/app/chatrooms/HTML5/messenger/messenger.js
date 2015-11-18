@@ -1,8 +1,8 @@
-angular.module("myApp.gruntMessenger", [])
+angular.module("myApp.html5Messenger", [])
 
-.controller("GruntMsgController", ["$scope", "$state", "Auth", "$firebaseArray",
+.controller("Html5MsgController", ["$scope", "$state", "Auth", "$firebaseArray",
   function($scope, $state, Auth, $firebaseArray) {
-    var ref = new Firebase("https://gitlytest.firebaseio.com/grunt");
+    var ref = new Firebase("https://gitlytest.firebaseio.com/HTML5");
     $scope.messages = $firebaseArray(ref);
     $scope.auth = Auth;
 

@@ -4,9 +4,9 @@ angular.module("myApp.logout", [])
 		
 	    $scope.logOut = function() {
 	      // Auth.$unauth();
-	      Auth.$unauth()
+	      Auth.$unauth();
 	      $state.go('login');
-	      console.log('this works');
+	      // console.log('this works');
 	    };
 
 	}]);
