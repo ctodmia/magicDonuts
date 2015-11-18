@@ -18,6 +18,7 @@ angular.module("myApp.gruntMessenger", [])
       }
     };
 
+
     $scope.logOut = function() {
       // Auth.$unauth();
       Auth.$unauth();
@@ -25,5 +26,4 @@ angular.module("myApp.gruntMessenger", [])
       console.log('this works');
     };
 
-  }
-]);
+  }]);
