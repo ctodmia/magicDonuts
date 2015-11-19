@@ -2,6 +2,32 @@
   margin: 0px 50px 0px 50px;
 }
 
+#profile{
+     border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+#github-avatar{
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+.repos{
+  width: 200px;
+  height: 200px;
+}
+
+.followers img{
+  width: 200px;
+  height: 200px;
+}
+
+.following img{
+  width: 200px;
+  height: 200px;
+}
+
 #example-messages li {
   padding-bottom: 10px;
   list-style: none;
