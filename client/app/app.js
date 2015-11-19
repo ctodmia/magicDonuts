@@ -3,6 +3,7 @@ angular.module("myApp", [
 	"firebase",
 	"ui.router",
 	"myApp.services",
+	"myApp.user",
 	"myApp.logout",
 	"myApp.search",
 	"myApp.cssMessenger",
@@ -42,7 +43,10 @@ angular.module("myApp", [
 				// 	controller: "LogOutController"
 				// },
 				//html and controller required for onlineUsers view
-				"onlineUsers@home": { template: "Welcome!"},
+				"onlineUsers@home": { 
+					templateUrl: "app/home/registereduser/registereduser.html",
+					controller: "User"
+					},
 				//html and controller required for chatrooms view
 				"roomList@home": { templateUrl: "app/home/roomlist.html" },
 				//html and controller required for userSearch view
@@ -198,7 +202,8 @@ angular.module("myApp", [
 		});
 
 	$urlRouterProvider.otherwise("/login");
-});
+})
+	.constant("FirebaseUrl", "https://gitlytest.firebaseio.com/")
 
 //route manager (.config) also goes here
 
